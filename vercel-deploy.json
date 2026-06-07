@@ -1,0 +1,19 @@
+{
+  "name": "kasiboost",
+  "version": "1.0.0",
+  "public": true,
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_KEY": {
+      "description": "Supabase Public Key",
+      "value": "sb_publishable_yZAncQaOQWZH1RViipHE7g_-TZNEnU7"
+    }
+  },
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "functions": {
+    "api/**": {
+      "runtime": "nodejs20.x"
+    }
+  }
+}
