@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Kasiboost',
-  description: 'Your app is live and ready!',
+  title: 'Kasi Boost',
+  description: 'Kasi Boost project starter',
 };
 
 export default function RootLayout({
