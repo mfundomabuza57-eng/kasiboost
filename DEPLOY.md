@@ -1,31 +1,12 @@
-# 🚀 Kasiboost - One-Click Deployment
+# Deployment notes
 
-Your Kasiboost app is ready for production.
+This repo currently contains a Next.js deployment-status starter, not the full Kasi Boost application. The UI does not perform a real Supabase connection test and authentication is not implemented.
 
-## Quick Deploy to Vercel
+## Deploy
 
-You have TWO options:
+1. Import this repository into your deployment provider.
+2. Configure `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` using your Supabase project's values.
+3. Do not add service-role credentials to client-visible variables.
+4. Verify RLS policies and real authentication before using production data.
 
-### Option 1: One-Click Deploy (No Setup Required)
-1. Visit: https://vercel.com/new
-2. Select "Continue with GitHub" or "Continue with GitLab"
-3. Import this repository
-4. Vercel will auto-deploy your app
-5. You get a permanent URL instantly
-
-### Option 2: Current Preview URL (Already Live!)
-Your app is LIVE RIGHT NOW at:
-**https://cartel-warped-owl.3000.dev.raccoonai.tech**
-
-This is fully functional but temporary (resets periodically).
-
----
-
-## Environment Variables Configured:
-- ✓ NEXT_PUBLIC_SUPABASE_KEY: sb_publishable_yZAncQaOQWZH1RViipHE7g_-TZNEnU7
-
-## Your App Details:
-- Framework: Next.js 16
-- Runtime: Node.js
-- Database: Supabase
-- Status: Production Ready ✓
+The old temporary preview URL and claims of production readiness have been removed because they may no longer be accurate.
