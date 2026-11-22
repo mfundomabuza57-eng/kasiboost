@@ -1,28 +1,18 @@
-# Kasiboost
+# Kasi Boost (repository starter)
 
-Your production-ready Next.js app with Supabase integration.
+This repository currently contains a **deployment-status starter page**, not the complete Kasi Boost business application. Authentication, business features, and verified database connectivity are not implemented in the checked-in source.
 
-## Deploy to Vercel
-
-Click the button below to deploy immediately:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/kasiboost&env=NEXT_PUBLIC_SUPABASE_KEY&env=NEXT_PUBLIC_SUPABASE_URL)
-
-## Local Development
+## Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build for Production
+## Environment configuration
 
-```bash
-npm run build
-npm start
-```
+Copy `.env.example` to `.env.local` and supply your Supabase project URL and publishable key. A Supabase publishable key is safe to use in browser code only when database permissions are correctly protected by Row Level Security (RLS). Never place a service-role key or other server secret in a `NEXT_PUBLIC_` variable.
 
-## Environment Variables
+## Production readiness
 
-- `NEXT_PUBLIC_SUPABASE_KEY`: sb_publishable_yZAncQaOQWZH1RViipHE7g_-TZNEnU7
-- `NEXT_PUBLIC_SUPABASE_URL`: Your Supabase project URL
+Do not treat the starter page's deployment indicator as a live health check. Before launch, implement real authentication, configure and verify Supabase RLS policies, add server-side authorization where needed, and run production build and tests.
