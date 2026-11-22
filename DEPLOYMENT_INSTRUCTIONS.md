@@ -1,25 +1,10 @@
-# 🚀 Kasiboost - Deploy to Vercel in 1 Click
+# Deployment checklist
 
-Your Kasiboost app is ready to deploy!
+This repository is a deployment-status starter page only; it is not the complete Kasi Boost application. It does not currently include authentication or a verified Supabase connection.
 
-## ✅ One-Click Deploy Link
+1. Import the repository into your deployment provider.
+2. Configure `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` in that provider's environment settings.
+3. Run a production build and verify deployment.
+4. Before using real business data, implement authentication and verify Supabase Row Level Security (RLS) policies.
 
-Click here to deploy to Vercel instantly:
-
-👉 **https://vercel.com/new/git/external?repository-url=https://github.com/mfundomabuza57-eng/kasiboost&project-name=kasiboost&repository-name=kasiboost**
-
-## What happens:
-1. Click the link above
-2. Click "Create" 
-3. Vercel deploys your app automatically
-4. You get a permanent URL like: `kasiboost.vercel.app`
-
-## Environment Variables (Already Set):
-- NEXT_PUBLIC_SUPABASE_KEY: sb_publishable_yZAncQaOQWZH1RViipHE7g_-TZNEnU7
-
-## Your GitHub Repo:
-https://github.com/mfundomabuza57-eng/kasiboost
-
----
-
-That's it! Your app will be live in 2-3 minutes with a permanent public URL. 🎉
+Never expose service-role keys or other server secrets in browser code or `NEXT_PUBLIC_` variables.
